@@ -1,0 +1,302 @@
+/* General CSS */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #ee5801,
+    #ffff00
+  ); /* Gradient background */
+  text-align: center;
+}
+
+/* Header Part */
+/* Navigation styles */
+/*handling the logo row */
+.logoRow {
+  display: flex;
+
+  figure {
+    margin: 0.5rem;
+  }
+}
+
+.logoRowItem {
+  flex: 1;
+}
+
+.search {
+  display: flex;
+  align-items: end;
+  justify-items: start;
+  margin-bottom: 2rem;
+
+  form {
+    display: flex;
+    align-items: center;
+
+    input {
+      padding: 0.5rem;
+      margin-right: 0;
+      border: none;
+      /* border-radius: 2rem; */
+    }
+
+    button {
+      background-color: #b8451b;
+      color: white;
+      padding: 0.2rem;
+      /* border-radius: 1rem; */
+      letter-spacing: 0.1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff4800;
+    }
+  }
+}
+
+.logo-container {
+  margin: 1rem;
+}
+
+/* style when menu is displayed */
+nav {
+  display: flex;
+  justify-content: center; /* Center the navigation items horizontally */
+  background-color: #ff4800;
+  align-items: center;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display the list items horizontally */
+    flex-wrap: wrap;
+  }
+
+  li {
+    padding: 1rem 3rem;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hamburger-hidden {
+  display: none;
+}
+
+/* Optional: Add hover effect for better visual feedback */
+.menu:hover {
+  background-color: #ff6d33;
+}
+
+.menu a:hover {
+  border-bottom: 1px yellow solid;
+}
+
+/* Media Query to control when screen size is less than 600px */
+@media screen and (max-width: 600px) {
+  .search input[type="search"],
+  .search,
+  .search button,
+  .search form,
+  .logoRow {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-hidden {
+    display: none;
+  }
+
+  .nav-active {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .nav-active {
+    display: flex;
+    justify-content: center; /* Center the navigation items horizontally */
+    align-items: center;
+  }
+}
+
+/* Main Part */
+/* Hero section styles */
+.hero-section {
+  background-image: url("../IMG/background.jpg");
+  background-size: cover; /* Expand the image to cover the entire section */
+  background-position: center; /* Center the image within the section */
+  height: 80vh; /* Set an appropriate height */
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: end; */
+}
+
+.slogan {
+  margin-bottom: 8rem;
+}
+
+/* Heading styles */
+h1 {
+  /* font-family: "Pacifico", cursive; */
+  color: white;
+  /* background-color: rgba(255, 191, 3, 0.7); */
+}
+
+/* Additional styles */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  /* Adjust the spacing between images */
+  justify-content: center; /* Center-align items horizontally */
+  align-items: center; /* Center-align items vertically */
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.text-container {
+  text-align: center; /* Center-align text */
+  margin-top: 20px; /* Set the margin between images and text */
+}
+
+/* Footer Part */
+footer {
+  background-color: #ee5801; /* Set the footer background color */
+  color: #fff; /* Set the text color to white for better visibility */
+  padding: 20px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center-align the text */
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-right: 20px; /* Add margin between related links */
+  margin-bottom: 10px; /* Add margin below each related link */
+}
+
+.footerRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerRowItem {
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  flex: 1 1 max(30%, 400px);
+}
+
+/* About Us */
+section.au{
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 20px;
+  background-color: #FFAF45;
+  padding: 20px 50px;
+  text-align: left;
+  color: #333;
+}
+
+#map{
+  width:100%;
+}
+
+/* Table Styling */
+table {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+th{
+  background-color: #EE5901;
+  color:white;
+}
+
+th, td {
+  padding: 8px;
+  height: 50px;
+}
+
+tr:hover {background-color: #ddd;}
+
+th.country, th.name {
+  width: 25%;
+}
+
+th.illustration{
+  width: 50%;
+}
+
+td figure{
+  margin: 0;
+}
+
+td.illustration img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+td.name p{
+  font-size: 5vw;
+  font-family: serif;
+  font-weight: 400;
+}
+
+td.name.long p{
+  font-size: 4vw;
+}
+
+td.name.longer p{
+  font-size: 3vw;
+}
+
+td.country img{
+  border: 1px black solid;
+  width: 50%;
+  margin-right: 10px;
+}
+
+td.country.no_border img{
+  border:0;
+}
+
+td.country p{
+  font-weight: 500;
+}
+
+td figcaption{
+  /* background-color: grey; */
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+
+
+

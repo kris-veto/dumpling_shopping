@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character set to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Responsive viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for SEO -->
+    <meta name="author" content="Masashi Maruyama, Cristian Vera, Jacky Woo">
+    <meta name="description" content="Sale Dumplin">
+    <meta name="keywords" content="Sale original Dumplin">
+    <!-- Link to the CSS files -->
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles-product.css">
+    <!-- Shortcut icon for the website -->
+    <link rel="shortcut icon" href="./IMG/icon.png" />
+    <!-- Connect to Google Fonts-->
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Material Icon from Google -->
+    <!--Search Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- hamburger Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Title of the webpage -->
+    <title>Product</title>
+</head>
+<!--  sidebar   -->
+<div id="sidebar">   
+     
+    <a   href="#" onclick="closeSidebar()">Close</a>             
+    <h2 id="selectedItem">Selected Item: </h2>
+    <h2 id="totalItem">This item price: </h2>
+    <h2 id="total">Total Display: </h2>
+    <button class="button3" onclick="emptyCart()">Empty cart</button>
+    <button class="button3" >Check Out</button>
+</div>
+<body>
+    
+    <header>
+        <div class="logoRow">
+            <div class="logoRowItem"></div>
+            <figure class="logo-container logoRowItem">
+                <a href="index.html"><img src="./IMG/logo.png" alt="Dumpling Logo" width="100" height="100"></a>
+            </figure>
+            <div class="search logoRowItem">
+                <form action="/search" method="get">
+                    <input type="search" name="q" placeholder="Search...">
+                    <button type="submit"><span class="material-symbols-outlined">
+                            search
+                        </span></button>
+                    <button class="hamburger-menu hamburger-hidden" type="button"><span
+                            class="material-symbols-outlined">
+                            menu
+                        </span></button>
+                </form>
+            </div>
+        </div>
+        <!-- Navigation menu with links to different pages -->
+        <nav id="nav_menu" class="nav-hidden">
+            <ul>
+                <li class="menu"><a href="index.html">Home</a></li>
+                <li class="menu"><a href="aboutus.html">About Us</a></li>
+                <li class="menu"><a href="product.html">Product</a></li>
+                <li class="menu"><a href="contact.html">Contact</a></li>
+                
+                <!-- add search window -->
+            </ul>
+            
+        </nav>
+        <!-- Title container with the main heading and images -->
+    </header>
+    <main class="container">
+        <div class="card">
+            
+            <img src="./IMG/dumpling-1.png" class="img" alt="First">
+                
+            
+            <span class="text">Crispy and golden on the outside, tender on the inside – our pan-fried gyoza is a symphony of flavors in every bite.</span>
+            <fieldset>
+                <legend><p><strong>Preferences</strong></p></legend>
+                <div class="checkbox">
+                    <label for="quantity"><p>Quantity-</p></label>
+                    <select id="quantity" name="quantity">
+                        <option value="choose">choose</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>                
+                </div>
+                <div class="checkbox2">
+                    <input type="checkbox" name="Pref1" id="EG1" value="Extra Garlic" />
+                    <label for="EG1"><p>-Ext. Garlic-</p></label>
+                    <input type="checkbox" name="Pref1" id="Spicy1" value="Spicy" />
+                    <label for="Spicy1"><p>-Spicy-</p></label>
+                    <input type="checkbox" name="Pref1" id="GS1" value="Gyoza Salse">
+                    <label for="GS1"><p>-Esp. Salse-</p></label>
+                </div>       
+            </fieldset>
+            <div>
+                <span>
+                    <span class="price">$</span>
+                    <span class="price2">20</span>
+                    <span class="price">25</span>
+                    <span class="quantity">(6u)</span>
+                </span>
+                <button class="button2" onclick="openSidebar('Yaki Gyoza', 20.25)">+ Add to cart</button> <!--b1-->
+            </div>
+            
+
+        </div>
+        <div class="card">
+            <img src="./IMG/dumpling-6.png" class="img" alt="Second">
+            <span class="text">Elevate your taste experience with our shiso-wrapped gyoza, a harmonious blend of fresh herbs and savory filling</span>
+            <fieldset>
+                <legend><p><strong>Preferences</strong></p></legend>
+                <div class="checkbox">
+                    <label for="quantity"><p>Quantity-</p></label>
+                    <select id="quantity" name="quantity2">
+                        <option value="choose">choose</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>                
+                </div>
+                <div class="checkbox2">
+                    <input type="checkbox" name="Pref2" id="EG2" value="Extra Garlic" />
+                    <label for="EG2"><p>-Ext. Garlic-</p></label>
+                    <input type="checkbox" name="Pref2" id="Spicy2" value="Spicy" />
+                    <label for="Spicy2"><p>-Spicy-</p></label>
+                    <input type="checkbox" name="Pref2" id="GS2" value="Gyoza Salse">
+                    <label for="GS2"><p>-Esp. Salse-</p></label>
+                </div>
+            </fieldset>
+            <div>
+                <span>
+                    <span class="price">$</span>
+                    <span class="price2">18</span>
+                    <span class="price">25</span>
+                    <span class="quantity">(6u)</span>
+                </span>
+                <button class="button2" onclick="openSidebar('Shizo Gyoza', 18.25)">+ Add to cart</button> <!--b2-->
+            </div>
+        </div>
+        <div class="card">
+            <img src="./IMG/dumpling-5.png" class="img" alt="third">
+            <span class="text">Age Gyoza, Golden and crunchy, our deep-fried gyoza offers a satisfyingly crispy crunchy texture with every bite.</span>
+            <fieldset>
+                <legend><p><strong>Preferences</strong></p></legend>
+                <div class="checkbox">
+                    <label for="quantity"><p>Quantity-</p></label>
+                    <select id="quantity" name="quantity3">
+                        <option value="choose">choose</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>                
+                </div>
+                <div class="checkbox2">
+                    <input type="checkbox" name="Pref3" id="EG3" value="Extra Garlic" />
+                    <label for="EG3"><p>-Ext. Garlic-</p></label>
+                    <input type="checkbox" name="Pref3" id="Spicy3" value="Spicy" />
+                    <label for="Spicy3"><p>-Spicy-</p></label>
+                    <input type="checkbox" name="Pref3" id="GS3" value="Gyoza Salse">
+                    <label for="GS3"><p>-Esp. Salse-</p></label>
+                </div>
+            </fieldset>
+            <div>
+                <span>
+                    <span class="price">$</span>
+                    <span class="price2">15</span>
+                    <span class="price">75</span>
+                    <span class="quantity">(6u)</span>
+                </span>
+                <button class="button2" onclick="openSidebar('Age Gyoza', 15.75)">+ Add to cart</button>  <!--b3-->
+            </div>
+        </div>
+        <div class="card">
+            <img src="./IMG/dumpling-4.png" class="img" alt="four">
+            <span class="text">Dive into a steaming bowl of comforting broth with our boiled gyoza, a delightful twist on the traditional dumpling.</span>
+            <fieldset>
+                <legend><p><strong>Preferences</strong></p></legend>
+                <div class="checkbox">
+                    <label for="quantity"><p>Quantity-</p></label>
+                    <select id="quantity" name="quantity4">
+                        <option value="choose">choose</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>                
+                </div>
+                <div class="checkbox2">
+                    <input type="checkbox" name="Pref4" id="EG4" value="Extra Garlic" />
+                    <label for="EG4"><p>-Ext. Garlic-</p></label>
+                    <input type="checkbox" name="Pref4" id="Spicy4" value="Spicy" />
+                    <label for="Spicy4"><p>-Spicy-</p></label>
+                    <input type="checkbox" name="Pref4" id="GS4" value="Gyoza Salse">
+                    <label for="GS4"><p>-Esp. Salse-</p></label>
+                </div>
+            </fieldset>
+            <div>
+                <span>
+                    <span class="price">$</span>
+                    <span class="price2">22</span>
+                    <span class="price">75</span>
+                    <span class="quantity">(6u)</span>
+                </span>
+                <button class="button2" onclick="openSidebar('Tebichi Gyoza', 22.75)">+ Add to cart</button>  <!--b4-->
+            </div>
+            
+        </div>
+        <div class="card">
+            <img src="./IMG/dumpling-3.png" class="img" alt="four">
+            <span class="text">Indulge in the tender, flavorful richness of our tebichi gyoza, a unique delicacy featuring succulent pig's feet.</span>
+            <fieldset>
+                <legend><p><strong>Preferences</strong></p></legend>
+                <div class="checkbox">
+                    <label for="quantity"><p>Quantity-</p></label>
+                    <select id="quantity" name="quantity5">
+                        <option value="choose">choose</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>                
+                </div>
+                <div class="checkbox2">
+                    <input type="checkbox" name="Pref5" id="EG5" value="Extra Garlic" />
+                    <label for="EG5"><p>-Ext. Garlic-</p></label>
+                    <input type="checkbox" name="Pref5" id="Spicy5" value="Spicy" />
+                    <label for="Spicy5"><p>-Spicy-</p></label>
+                    <input type="checkbox" name="Pref5" id="GS5" value="Gyoza Salse">
+                    <label for="GS5"><p>-Esp. Salse-</p></label>
+                </div>
+            </fieldset>
+            <div>
+                <span>
+                    <span class="price">$</span>
+                    <span class="price2">20</span>
+                    <span class="price">00</span>
+                    <span class="quantity">(6u)</span>
+                </span>
+                <button class="button2" onclick="openSidebar('Sui Gyoza', 20.00)">+ Add to cart</button> <!--b5-->
+            </div>
+            
+        </div>
+        <div class="card">
+            <img src="./IMG/dumpling-2.png" class="img" alt="four">
+            <span class="text">Melt-in-your-mouth goodness awaits with our cheese-filled gyoza, a delectable fusion of savory meat and creamy cheese.</span>
+            <fieldset>
+                <legend><p><strong>Preferences</strong></p></legend>
+                <div class="checkbox">
+                    <label for="quantity"><p>Quantity-</p></label>
+                    <select id="quantity" name="quantity6">
+                        <option value="choose">choose</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>                
+                </div>
+                <div class="checkbox2">
+                    <input type="checkbox" name="Pref6" id="EG6" value="Extra Garlic" />
+                    <label for="EG6"><p>-Ext. Garlic-</p></label>
+                    <input type="checkbox" name="Pref6" id="Spicy6" value="Spicy" />
+                    <label for="Spicy6"><p>-Spicy-</p></label>
+                    <input type="checkbox" name="Pref6" id="GS6" value="Gyoza Salse">
+                    <label for="GS6"><p>-Esp. Salse-</p></label>
+                </div>
+            </fieldset>
+            <div>
+                <span>
+                    <span class="price">$</span>
+                    <span class="price2">21</span>
+                    <span class="price">25</span>
+                    <span class="quantity">(6u)</span>
+                </span>
+                <button class="button2" onclick="openSidebar('Cheese Gyoza', 21.25)">+ Add to cart</button>  <!--b6-->
+            </div>
+            
+        </div>
+       
+    </main>
+    <footer>
+        <p>&copy; Dumpling Store</p>
+        <div class="footerRow">
+            <div class="footerRowItem">
+                <h2>Contact us:</h2>
+                <a href="tel:+81662130400">Phone: +81662130400</a> <br>
+                <a href="mailto:contact@dumplingStore.com">contact@dumplingStore.com</a>
+                <p>Office Hour:<br>
+                    From Monday to Friday between 9am-6pm
+                    and Saturday between 10am and 5pm</p>
+            </div>
+            <div class="footerRowItem">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.767918204529!2d135.5020297!3d34.668793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71487103989%3A0x45d2b17ae2f00704!2sOsaka%20Ohsho!5e0!3m2!1sen!2sca!4v1711204311517!5m2!1sen!2sca"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footerRowItem">
+                <h2>Related Links:</h2>
+                <!-- Link of other web site -->
+                <ul>
+                    <li class="Related"><a href="https://www.justonecookbook.com/gyoza/">What is Gyoza?</a></li>
+                    <li class="Related"><a
+                            href="https://www.recipetineats.com/gyoza-japanese-dumplings-potstickers/">Gyoza
+                            Recipe</a></li>
+                    <li class="Related"><a href="https://en.wikipedia.org/wiki/Jiaozi#Gy%C5%8Dza"><img height="10rem"
+                                src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg"
+                                alt="wiki"> of Gyoza</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character set to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Responsive viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for SEO -->
+    <meta name="author" content="Masashi Maruyama, Cristian Vera, Jacky Woo">
+    <meta name="description" content="Sale Dumplin">
+    <meta name="keywords" content="Sale original Dumplin">
+    <!-- Link to the CSS files -->
+    <link rel="stylesheet" href="./CSS/sanitize.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- Shortcut icon for the website -->
+    <link rel="shortcut icon" href="./IMG/icon.png" />
+    <!-- Connect to Google Fonts-->
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Material Icon from Google -->
+    <!--Search Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- hamburger Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Title of the webpage -->
+    <title>About Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoRow">
+            <div class="logoRowItem"></div>
+            <figure class="logo-container logoRowItem">
+                <a href="index.html"><img src="./IMG/logo.png" alt="Dumpling Logo" width="100" height="100"></a>
+            </figure>
+            <div class="search logoRowItem">
+                <form action="/search" method="get">
+                    <input type="search" name="q" placeholder="Search...">
+                    <button type="submit"><span class="material-symbols-outlined">
+                            search
+                        </span></button>
+                    <button class="hamburger-menu hamburger-hidden" type="button"><span
+                            class="material-symbols-outlined">
+                            menu
+                        </span></button>
+                </form>
+            </div>
+        </div>
+        <!-- Navigation menu with links to different pages -->
+        <nav id="nav_menu" class="nav-hidden">
+            <ul>
+                <li class="menu"><a href="index.html">Home</a></li>
+                <li class="menu"><a href="aboutus.html">About Us</a></li>
+                <li class="menu"><a href="product.html">Product</a></li>
+                <li class="menu"><a href="contact.html">Contact</a></li>
+                <!-- add search window -->
+            </ul>
+        </nav>
+        <!-- Title container with the main heading and images -->
+    </header>
+    <main>
+        <section class="history au">
+            <h1>History of Gyoza</h1>
+            <p>Gyoza, a beloved food in Japan, believed to be introduced from China in the 19th Century. Its popularity
+                among Japanese sky rocketed after World War II, while returning solidiers from northern-east of China
+                was craving for
+                the iconic street food.</p>
+            <p>Today, gyoza is a staple part of Japanese cuisine, readily found in ramen shops, Chinese restaurants,
+                specialty stores, and even convenience stores.</p>
+            <p>Gyoza actually has so many forms all around the world.</p>
+            <figure></figure>
+            <img src="./IMG/about-us/Gyoza-map-1.jpg" alt="Gyoza Map" id="map">
+            <p> Enjoy this simple delicacy by wrapping skin and fillings</p>
+        </section>
+        <section class="names au">
+            <h2>Polymorphism of Gyoza in Different Culture</h2>
+            <table class="sortable">
+                <thead>
+                    <tr>
+                        <th class="country"><span>Country</span></th>
+                        <th class="name"><span>Name</span></th>
+                        <th class="illustration"><span>Illustration</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="japan">
+                        <td class="country"><img src="./IMG/about-us/country/japan.png" alt="Japan">
+                            <p>Japan</p>
+                        </td>
+                        <td class="name">
+                            <p>Gyōza</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/gyoza.png" alt="Gyoza">
+                                <figcaption>Pan-fried, yaki-gyōza(焼き餃子)
+                                </figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="china">
+                        <td class="country"><img src="./IMG/about-us/country/china.png" alt="China">
+                            <p>China</p>
+                        </td>
+                        <td class="name">
+                            <p>餃子</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/jiaozi.png" alt="Gyoza">
+                                <figcaption>JiaoZi, Boiled and Steam are majority</figcaption>
+                            </figure>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr id="korea">
+                        <td class="country"><img src="./IMG/about-us/country/korea.png" alt="Korea">
+                            <p>Korea</p>
+                        </td>
+                        <td class="name">
+                            <p>교자</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/mandu.png" alt="Mandu">
+                                <figcaption>Mandu, Similar to Central Asisn Manti</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="nepal">
+                        <td class="country no_border"><img src="./IMG/about-us/country/nepal.png" alt="Nepal">
+                            <p>Nepal</p>
+                        </td>
+                        <td class="name">
+                            <p>ममचा</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/momo.jpg" alt="Momo">
+                                <figcaption>often served with a tomato-based spicy dipping sauce</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="italy">
+                        <td class="country"><img src="./IMG/about-us/country/italy.png" alt="Italy">
+                            <p>Italy</p>
+                        </td>
+                        <td class="name long">
+                            <p>Ravioli</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/ravioli.png" alt="ravioli">
+                                <figcaption>Stuffed Pasta</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="russia">
+                        <td class="country"><img src="./IMG/about-us/country/russia.png" alt="Russia">
+                            <p>Russia</p>
+                        </td>
+                        <td class="name long">
+                            <p>пельмени</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/pelmeni.png" alt="Pelmeni">
+                                <figcaption>crescent-shaped dumplings</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="germany">
+                        <td class="country"><img src="./IMG/about-us/country/germany.png" alt="Germany">
+                            <p>Germany</p>
+                        </td>
+                        <td class="name longer">
+                            <p>Maultasche</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/maultasche.jpg" alt="maultasche">
+                                <figcaption>often filled with sausage meat, spinach, bread crumbs and onions and
+                                    flavored with various herbs and spices</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="poland">
+                        <td class="country"><img src="./IMG/about-us/country/poland.png" alt="Poland">
+                            <p>Poland</p>
+                        </td>
+                        <td class="name">
+                            <p>Pierogi</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/pierogi.png" alt="Pierogi">
+                                <figcaption>Come with Savory and sweet filling, savory one will serve with sour cream,
+                                    sweet one will serve with melted butter</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr id="turkey">
+                        <td class="country"><img src="./IMG/about-us/country/turkey.png" alt="Turkey">
+                            <p>Turkey</p>
+                        </td>
+                        <td class="name">
+                            <p>Manti</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/manti.png" alt="Manti">
+                                <figcaption>filled with grounded lamb or beef that spiced with black pepper and served
+                                    with red pepper yogurt sauce </figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="ukraine">
+                        <td class="country"><img src="./IMG/about-us/country/ukraine.png" alt="Ukraine">
+                            <p>Ukraine</p>
+                        </td>
+                        <td class="name long">
+                            <p>Vareniki</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/vareniki.png" alt="Vareniki">
+                                <figcaption>Usually stuffed with a vegetarian filling of potato, cabbage, cheese, or
+                                    mushrooms</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr id="israel">
+                        <td class="country no_border"><img src="./IMG/about-us/country/israel.png" alt="Israel">
+                            <p>Israel</p>
+                        </td>
+                        <td class="name long">
+                            <p>Kreplach</p>
+                        </td>
+                        <td class="illustration">
+                            <figure>
+                                <img src="./IMG/about-us/Kreplach.png" alt="Kreplach">
+                                <figcaption>folded into a triangle or a crescent and served in chicken soup</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Dumpling Store</p>
+        <div class="footerRow">
+            <div class="footerRowItem">
+                <h2>Contact us:</h2>
+                <a href="tel:+81662130400">Phone: +81662130400</a> <br>
+                <a href="mailto:contact@dumplingStore.com">contact@dumplingStore.com</a>
+                <p>Office Hour:<br>
+                    From Monday to Friday between 9am-6pm
+                    and Saturday between 10am and 5pm</p>
+            </div>
+            <div class="footerRowItem">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.767918204529!2d135.5020297!3d34.668793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71487103989%3A0x45d2b17ae2f00704!2sOsaka%20Ohsho!5e0!3m2!1sen!2sca!4v1711204311517!5m2!1sen!2sca"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footerRowItem">
+                <h2>Related Links:</h2>
+                <!-- Link of other web site -->
+                <ul>
+                    <li class="Related"><a href="https://www.justonecookbook.com/gyoza/">What is Gyoza?</a></li>
+                    <li class="Related"><a
+                            href="https://www.recipetineats.com/gyoza-japanese-dumplings-potstickers/">Gyoza
+                            Recipe</a></li>
+                    <li class="Related"><a href="https://en.wikipedia.org/wiki/Jiaozi#Gy%C5%8Dza"><img height="10rem"
+                                src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg"
+                                alt="wiki"> of Gyoza</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>
