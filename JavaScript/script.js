@@ -20,7 +20,7 @@ function openSidebar(itemName, itemPrice) {
     document.getElementById("total").innerText = `Total Display: $${total}`;
 }
 
-function emptyCart() {
+function resetTotaL() {
     total = 0;
     document.getElementById("total").innerText = `Total Display: $${total}`;
   }
